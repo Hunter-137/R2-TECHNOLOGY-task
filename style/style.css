@@ -1,3 +1,150 @@
-h1 {
-  color: red;
+@font-face {
+  font-family: "Gotham Pro";
+  src: url(../fonts/GothamPro/gothampro.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: url(../fonts/GothamPro/gothampro_bold.ttf);
+  font-weight: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #fff;
+  font-family: "Gotham Pro", Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 30.8px */
+}
+
+html,
+body {
+  height: 100%;
+  background: #171422;
+}
+
+.container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.header {
+  /* height: 650px; */
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(
+    90deg,
+    #9e0b37 0.98%,
+    #ffc531 72.22%,
+    #9e0b37 99.95%
+  );
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  padding-left: 250px;
+}
+
+.header-nav-list {
+  display: flex;
+  gap: 75px;
+}
+
+.header-nav-list__item {
+  font-size: 16px;
+}
+
+.header-auth-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+  padding-right: 250px;
+}
+
+.header-auth__login {
+  font-size: 16px;
+}
+
+.header-auth__registration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 49px;
+  padding: 24px 72px;
+  margin-left: 5px;
+  border-radius: 40px;
+  background: rgba(158, 11, 55, 0.7);
+  box-shadow: 4px 4px 6px 0px rgba(255, 255, 255, 0.5) inset,
+    4px 4px 20px 0px rgba(223, 80, 23, 0.8);
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.header-content {
+  position: relative;
+}
+
+.header-content-overlay {
+  max-width: 1310px;
+  height: 568px;
+  background: linear-gradient(
+      123deg,
+      #df5017 4.42%,
+      rgba(223, 80, 23, 0.44) 22.08%,
+      rgba(223, 80, 23, 0.19) 35.36%,
+      rgba(223, 80, 23, 0) 52.74%
+    ),
+    linear-gradient(
+      90deg,
+      #282533 65.15%,
+      #282533 65.15%,
+      rgba(40, 37, 51, 0.74) 82.21%,
+      rgba(40, 37, 51, 0) 99.99%
+    );
+  position: relative;
+  z-index: 1;
+}
+
+.header-content-overlay__title {
+  font-size: 50px;
+  line-height: 120%; /* 60px */
+  text-transform: uppercase;
+  max-width: 820px;
+  padding-top: 178px;
+  padding-left: 250px;
+}
+
+.header-content-overlay__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  width: 1070px;
+  height: 567px;
+  background-image: url("../img/pc.png");
+  background-repeat: no-repeat;
+  background-position: 0 -371px;
+  background-size: cover;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.footer {
 }
