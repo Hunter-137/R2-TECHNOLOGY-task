@@ -26,6 +26,7 @@ html,
 body {
   height: 100%;
   background: #171422;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -62,6 +63,10 @@ body {
 
 .header-nav-list__item {
   font-size: 16px;
+}
+
+.header-nav-list__item a {
+  text-decoration: none;
 }
 
 .header-auth-wrapper {
@@ -132,7 +137,7 @@ body {
   z-index: 0;
   width: 1070px;
   height: 567px;
-  background-image: url("../img/pc.png");
+  background-image: url("../img/pc.jpeg");
   background-repeat: no-repeat;
   background-position: 0 -371px;
   background-size: cover;
@@ -141,6 +146,7 @@ body {
 .main {
   flex: 1 1 auto;
   display: flex;
+  gap: 20px;
 }
 
 .main-content {
@@ -288,8 +294,8 @@ body {
 
 .third-block__booklet__logo.__illustrator {
   position: absolute;
-  top: -100px;
-  left: 0;
+  top: -74px;
+  left: 335px;
 }
 
 .__illustrator__item {
@@ -314,8 +320,8 @@ body {
 
 .third-block__booklet__logo.__corel {
   position: absolute;
-  top: -100px;
-  left: 0;
+  top: -76px;
+  left: 73px;
 }
 
 .__corel__item {
@@ -336,8 +342,8 @@ body {
 
 .third-block__booklet__logo.__pdf {
   position: absolute;
-  top: -100px;
-  left: 450px;
+  top: -155px;
+  left: 696px;
 }
 
 .__pdf__item {
@@ -354,6 +360,19 @@ body {
   z-index: 0;
   width: 97px;
   height: 97px;
+}
+
+.__pdf__vector__item__left {
+  position: absolute;
+  top: 60px;
+  left: -155px;
+}
+
+.__pdf__vector__item__right {
+  rotate: -142deg;
+  position: absolute;
+  top: 60px;
+  left: 99px;
 }
 
 .fourth-block-app-list-wrapper {
@@ -374,16 +393,47 @@ body {
   margin-top: 18px;
 }
 
+.main-sidebar {
+  margin-top: 100px;
+  position: sticky;
+  top: 20px;
+  height: 880px;
+}
+
 .sidebar-article {
-  max-width: 220px;
+  width: 220px;
   height: 220px;
   position: relative;
   border-radius: 14.348px;
+  margin-bottom: 10px;
+}
+
+.sidebar-article:last-child {
+  margin-bottom: 0;
 }
 
 .sidebar-article.__1 {
-  background: url("../img/pc.png") lightgray -13.55px -61.199px / 112.319%
-    168.478% no-repeat;
+  background: url("../img/pc.jpeg") lightgray 0.45px -51.199px / 112.319% 168.478%
+    no-repeat;
+  background-size: cover;
+}
+
+.sidebar-article.__2 {
+  background: url("../img/team.png") lightgray 0.45px -0.199px / 112.319% 168.478%
+    no-repeat;
+  background-size: cover;
+}
+
+.sidebar-article.__3 {
+  background: url("../img/music-listnening.png") lightgray 0.45px 1.801px /
+    112.319% 168.478% no-repeat;
+  background-size: cover;
+}
+
+.sidebar-article.__4 {
+  background: url("../img/pc.jpeg") lightgray 0.45px -51.199px / 112.319% 168.478%
+    no-repeat;
+  background-size: cover;
 }
 
 .sidebar-article-overlay {
@@ -393,6 +443,8 @@ body {
     rgba(23, 20, 34, 0) 0%,
     rgba(23, 20, 34, 0.9) 55.17%
   );
+  width: 220px;
+  height: 111px;
   position: absolute;
   bottom: 0;
 }
@@ -402,15 +454,33 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  max-width: 208px;
+  width: 208px;
   height: 36px;
   background-color: transparent;
   border-radius: 24px;
   border: 1px solid #fff;
+  position: absolute;
+  bottom: 14px;
+  left: 6px;
+}
+
+.__item__accent {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.article-overlay__item__svg {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  bottom: 8px;
+  left: 180px;
+  object-fit: contain;
 }
 
 .footer {
   margin-top: 40px;
+  position: relative;
 }
 
 .footer-text {
