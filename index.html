@@ -410,6 +410,93 @@
         </div>
       </footer>
     </div>
+
+    <!-- Модальное окно регистрации -->
+    <div class="modal sign-up">
+      <div class="modal-sign-up">
+        <h2 class="modal-sign-up-title">Регистрация</h2>
+        <div class="modal-sign-up__close-btn __close-btn">&#10008;</div>
+        <form action="#" class="modal-sign-up__data-form">
+          <label for="dataSignUpFirstName" class="modal-sign-up-subtitle"
+            >Имя</label
+          >
+          <input
+            required
+            type="text"
+            id="modalFirstName"
+            class="modal-sign-up-subtitle-item"
+          />
+
+          <label for="dataSignUpSecondName" class="modal-sign-up-subtitle"
+            >Фамилия</label
+          >
+          <input
+            required
+            type="text"
+            id="dataSignUpSecondName"
+            class="modal-sign-up-subtitle-item"
+          />
+
+          <label for="dataSignUpEmail" class="modal-sign-up-subtitle"
+            >Почта</label
+          >
+          <input
+            required
+            type="email"
+            id="dataSignUpEmail"
+            class="modal-sign-up-subtitle-item"
+          />
+
+          <label for="dataSignUpPassword" class="modal-sign-up-subtitle"
+            >Пароль</label
+          >
+          <input
+            title="Пожалуйста, введите пароль больше 8 символов"
+            minlength="8"
+            required
+            type="password"
+            id="dataSignUpPassword"
+            class="modal-sign-up-subtitle-item"
+          />
+          <button class="modal-sign-up__submit __submit">
+            Зарегистрироваться
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Модальное окно авторизации -->
+
+    <div class="modal sign-in">
+      <div class="modal-sign-up">
+        <h2 class="modal-sign-up-title">Вход</h2>
+        <div class="modal-sign-up__close-btn __close-btn">&#10008;</div>
+        <form action="#" class="modal-sign-up__data-form">
+          <label for="dataSignUpEmail" class="modal-sign-up-subtitle"
+            >Почта</label
+          >
+          <input
+            required
+            type="email"
+            id="dataSignUpEmail"
+            class="modal-sign-up-subtitle-item"
+          />
+
+          <label for="dataSignUpPassword" class="modal-sign-up-subtitle"
+            >Пароль</label
+          >
+          <input
+            title="Пожалуйста, введите пароль больше 8 символов"
+            minlength="8"
+            required
+            type="password"
+            id="dataSignUpPassword"
+            class="modal-sign-up-subtitle-item"
+          />
+          <button class="modal-sign-up__submit __submit">Войти</button>
+        </form>
+      </div>
+    </div>
     <script src="./js/index.js"></script>
   </body>
 </html>
