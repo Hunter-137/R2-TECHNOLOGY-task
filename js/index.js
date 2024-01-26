@@ -31,4 +31,26 @@ document.addEventListener("DOMContentLoaded", function (event) {
       burgerMenu.classList.remove("_active");
     }
   });
+
+  //  ****************************** Модальные окна ************************************
+  const signUpBtn = document.querySelector(".header-auth__registration"); // кнопка регистрации
+  const signInBtn = document.querySelector(".header-auth__login"); // кнопка авторизации
+  const modalSignUp = document.querySelector(".modal.sign-up"); // модальное окно регистрации
+  const modalSignIn = document.querySelector(".modal.sign-in"); // модальное окно авторизации
+  const modalCloseBtn = document.querySelectorAll(".__close-btn"); // крестик в модальном окне
+
+  signUpBtn.addEventListener("click", function () {
+    modalSignUp.classList.add("_active");
+  });
+
+  signInBtn.addEventListener("click", function () {
+    modalSignIn.classList.add("_active");
+  });
+
+  modalCloseBtn.forEach((item) => {
+    item.addEventListener("click", function () {
+      modalSignUp.classList.remove("_active");
+      modalSignIn.classList.remove("_active");
+    });
+  });
 });
