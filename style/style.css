@@ -511,11 +511,6 @@ body {
 }
 
 .sidebar-article-overlay__item {
-  font-size: 9px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
   width: 208px;
   height: 36px;
   background-color: transparent;
@@ -526,19 +521,30 @@ body {
   left: 6px;
   cursor: pointer;
   transition-duration: 500ms;
+  text-decoration: none;
+  text-align: center;
+}
+
+.__item__text {
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-right: 35px;
+  padding-top: 5px;
 }
 
 .__item__accent {
   font-size: 14px;
   font-weight: 700;
+  padding-right: 25px;
 }
 
 .article-overlay__item__svg {
-  width: 45px;
-  height: 45px;
+  width: 55px;
+  height: 55px;
   position: absolute;
-  bottom: 8px;
-  left: 180px;
+  bottom: 3px;
+  left: 171px;
   object-fit: contain;
   cursor: pointer;
   transition-duration: 500ms;
@@ -555,7 +561,8 @@ body {
 }
 
 .footer-text {
-  max-width: 1371px;
+  max-width: 1418px;
+  margin: 0 20px;
 }
 
 .footer-carousel-wrapper {
@@ -850,10 +857,6 @@ body {
     bottom: initial;
     width: 50px;
     height: 50px;
-  }
-
-  .footer-text {
-    margin: 0 20px;
   }
 
   .footer-carousel-wrapper {
