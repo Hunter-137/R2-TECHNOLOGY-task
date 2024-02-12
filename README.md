@@ -13,7 +13,11 @@ and smooth change of pictures.
 5. Adaptive and cross-browser layout.
 6. ⁠Maintaining the validity of the code
 
-### [Figma layout](https://www.figma.com/file/IFouinr6FOAblrqCrfpUSf/Creat-%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0-%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D1%8F?type=design&node-id=1-2&mode=design&t=uLdBXlhNVpiaTzdF-0)
+### Figma link: [Layout](https://www.figma.com/file/IFouinr6FOAblrqCrfpUSf/Creat-%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0-%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D1%8F?type=design&node-id=1-2&mode=design&t=uLdBXlhNVpiaTzdF-0)
 
-### PNG layout
+## What I've done:
+- All requirements have been met
+### Deploy link: [Why Adobe?](https://hunter-137.github.io/R2-TECHNOLOGY-task/)
+
+##### PNG layout from Figma (only 1920px layout in Figma included)
 ![layout r2 technology](https://github.com/Hunter-137/R2-TECHNOLOGY-task/assets/122012699/5b2e50f6-645b-4e81-a870-fc6e9f3b69a5)
